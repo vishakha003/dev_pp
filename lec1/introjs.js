@@ -74,7 +74,7 @@ function sayhi(fullname,fun){//high order
 }
 
 sayhi("tony stark",getfirstname);
-sayhi("bruce banner",getlastname);
+sayhi("bruce banner",getfirstname);
 
 
 
