@@ -49,19 +49,30 @@ function sortfolder(folderpath){
     let content=fs.readdirSync(folderpath);
 
     for (let i = 0; i < content.length; i++) {
-        // get extension of each file
+        let content=
+
+        let isdirectory=fs.lstatSync(`${folderpath}/${content[i]}`).isDirectory();
+        if(isdirectory){
+            console.log("it is folder");
+            sortfolder(`${folderpath}/${content[i]}`);
+        }else{
         let extensionName = path.extname(content[i]);
         console.log(extensionName);
-
-    let extensionFolderExist = checkfolder(extensionName);
+        
+ 
+    let extensionFolderExist = checkfolder(extensionName,folderpath);
     if (extensionFolderExist) {
-      movefile(content[i]);
-    } else {
+      movefile(content[i],folderpath);
+
+        }
+     else {
+
       createfolder();
-      movefile(content[i]);
+      movefile(content[i],folderpath);
     }
 }
 
+}
 }
 
 sortfolder(folderpath);
