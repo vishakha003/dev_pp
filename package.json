@@ -1,0 +1,22 @@
+{
+  "name": "dev-pp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishakha003/dev_pp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishakha003/dev_pp/issues"
+  },
+  "homepage": "https://github.com/vishakha003/dev_pp#readme",
+  "dependencies": {
+    "puppeteer": "^8.0.0"
+  }
+}

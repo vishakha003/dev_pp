@@ -3,17 +3,14 @@
 //read serially
 
 const fs=require("fs");
-let f1kapromise=fs.promises.readFile("./f1.txt");
-f1kapromise.then(function(data){
-    console.log(data+"");
+let files=["../f1.txt","../f2.txt","../f3.txt"];
 
-    let f2kapromise=fs.promises.readFile("./f2.txt");
-f2kapromise.then(function(data){
-    console.log(data+"");
 
-    let f3kapromise=fs.promises.readFile("./f3.txt");
-    f3kapromise.then(function(data){
-        console.log(data+"");
-})
-})
-})
+    let f1kapromise=fs.promises.readFile(files[0]);
+for(let i=1;i<files.length;i++){
+    console.log(data+"");
+    let nextFilePromise=fs.promises.readFile(files[i]);
+    return nextFilePromise;
+)}
+}
+
