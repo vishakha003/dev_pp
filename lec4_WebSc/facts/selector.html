@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* desecndent */
+       ul >p{
+           color:red;
+
+        }
+        
+     /* class bsed selector */
+     /* .main{
+         color:yellow
+     } */
+
+     /* .secondary-ul li p{
+         color:pink
+     } */
+
+     #main{
+         /* # find the id and . find the class */
+         font-size: 100px;
+     }
+    
+    /* user defined */
+    div[divid="2"]{
+        color:lightgreen
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="abcd" divid="1"> i am a div1</div>
+    <div class="abcd" divid="2">i am a Div 2</div>
+    <h1 id="main" class="heading">heading 1</h1>
+    <h1 class="heaading">heading 2</h1>
+    <h1 class="heading">heading 3</h1>
+    <h1 class="heading">heading 4</h1>
+    <h1 class="heading">heading 5</h1>
+    <ul class="list main-ul">
+        <li>
+            <p class="list main">hi i am a main p tag </p> 
+        </li>
+        
+    </ul>
+  
+   <ul>
+       <ul class="list secondary-ul">
+       <li><a href="https://www.google.com">Google</a></li>
+       <li>
+           <p class="inner">i am p tag inside </p>
+       </li>
+   </ul>
+</body> 
+</html>
