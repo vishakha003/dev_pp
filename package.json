@@ -17,7 +17,8 @@
   "homepage": "https://github.com/vishakha003/dev_pp#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.6",
-    "puppeteer": "^8.0.0"
+    "puppeteer": "^8.0.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {},
   "keywords": [],
